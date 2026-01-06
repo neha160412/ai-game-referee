@@ -26,10 +26,9 @@ the start, prompts the user for input each round, invokes the appropriate tools
 to process game logic, and generates responses that are shown to the user.
 
 The core logic is handled through explicit tools:
-- `validate_move` is responsible for interpreting the user’s input and validating
-  it, including enforcing the one-time bomb usage rule.
-- `resolve_round` contains the game rules and determines the winner of each round.
-- `update_game_state` updates the persistent state by modifying scores, round
+- "validate_move" is responsible for interpreting the user’s input and validating it, including enforcing the one-time bomb usage rule.
+- "resolve_round" contains the game rules and determines the winner of each round.
+- "update_game_state" updates the persistent state by modifying scores, round
   count, and bomb usage flags.
 
 This design closely follows the tool-driven approach encouraged by Google ADK.
