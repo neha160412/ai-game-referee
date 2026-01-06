@@ -5,7 +5,6 @@ from typing import Dict, Callable
 def tool(func: Callable):
     """
     Simulated Google ADK @tool decorator.
-    Used to clearly mark tool functions as required by assignment.
     """
     return func
 
@@ -125,3 +124,4 @@ class GameRefereeAgent:
 if __name__ == "__main__":
     agent = GameRefereeAgent()
     agent.play()
+
